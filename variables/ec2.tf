@@ -6,8 +6,8 @@ resource "aws_instance" "terraform"{
 }
 
 resource "aws_security_group" "allow_ssh_terraform" {
-    name               = var.sg_name
-    description        = var.sg_discription
+    name        = var.sg_name
+     description = var.sg_description
 
     # usually we allow everything in egress
 
@@ -27,6 +27,6 @@ resource "aws_security_group" "allow_ssh_terraform" {
         ipv6_cidr_blocks  = ["::/0"]
     }
 
-    tags = var.tags
+    tags                   = var.tags
 
 }
