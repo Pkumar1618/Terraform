@@ -1,5 +1,5 @@
 resource "aws_instance" "backend" {
-    count = length(var.instance_names)
+    count = length(var.instance_names) # here In variables we have give 3 instances but if we give 30 also using through length function it will create.
     ami  = "ami-0220d79f3f480ecf5"
     instance_type = "t3.micro"
     vpc_security_group_ids  = [aws_security_group.allow_ssh_terraform.id]
