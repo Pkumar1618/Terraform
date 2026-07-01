@@ -1,3 +1,3 @@
 output "ami_id" {
-    value = data.aws_ami.joindevops
+    value = data.aws_ami.prashanth
 }
