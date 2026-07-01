@@ -8,5 +8,5 @@ resource "aws_route53_record" "expense" {
 
   records = [
     aws_instance.expense[count.index].private_ip 
-  ] # this is list type that is reson we have given to count.index.
+  ] # this is list type that is reson we have given to count index
 }
