@@ -3,6 +3,9 @@ variable "instance_names" {
   default = ["mysql", "backend", "frontend"]
 }
 
+variable "environment" {
+    default = "prod"
+}
 # variable "domain_name" {
 #     default = "daws81.online"
 # }
